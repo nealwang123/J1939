@@ -329,7 +329,7 @@ extern j1939_uint8_t  	J1939_Send_Message( J1939_MESSAGE *MsgPtr, CAN_NODE  _Can
 extern j1939_int8_t 	J1939_TP_TX_Message(j1939_uint32_t PGN, j1939_uint8_t DA, j1939_uint8_t *data, j1939_uint16_t data_num, CAN_NODE  _Can_Node);
 //多帧（多组）消息接受函数  (RTS/CTS传输协议)
 extern j1939_int8_t 	J1939_TP_RX_Message(TP_RX_MESSAGE *msg, CAN_NODE _Can_Node);
-//请求获去一个PGN
+//请求获取一个PGN
 extern void             J1939_Request_PGN(j1939_uint32_t pgn ,j1939_uint8_t DA, CAN_NODE  _Can_Node);
 //创建一个PGN响应
 extern void             J1939_Create_Response(j1939_uint8_t data[], j1939_uint16_t dataLenght, j1939_uint32_t PGN, void (*dataUPFun)(), CAN_NODE  _Can_Node);
